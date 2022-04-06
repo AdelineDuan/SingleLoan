@@ -1,0 +1,22 @@
+{{ extends "global/Page.html" }}
+{{ block title }}
+    Choose your school
+{{ endblock }}
+{{ block content }}
+
+    <p>
+        Your can choose between this two following two schools
+    </p>
+
+    <tr>
+        <td>{{ form.offer_1.label }}</td>
+        {{ for choice in form.offer_1 }}
+            <td>{{ choice }}</td>
+        {{ endfor }}
+    </tr>
+
+
+    {{ formfields }}
+    {{ next_button }}
+
+{{ endblock }}
