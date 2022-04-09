@@ -11,6 +11,12 @@ SESSION_CONFIGS = [
     dict(
         name='survey', app_sequence=['survey', 'payment_info'], num_demo_participants=1
     ),
+    dict(
+        name='single_loan_trial_app',
+        display_name="Single Loan",
+        app_sequence=['single_loan_trial_app', 'payment_info'],
+        num_demo_participants=1
+    ),
 ]
 
 # if you set a property in SESSION_CONFIG_DEFAULTS, it will be inherited by all configs
